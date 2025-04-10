@@ -294,27 +294,27 @@ input:checked + label .description {
 
 /* Portfolio Project Images */
 .card[for="p1"] {
-  background-image: url('../src\assets\images\employee management.jpg');
+  background-image: url('../src/assets/images/employee management.jpg');
 }
 
 .card[for="p2"] {
-  background-image: url('../src\assets\images\vehicle builder.jpg');
+  background-image: url('../src/assets/images/vehicle builder.jpg');
 }
 
 .card[for="p3"] {
-  background-image: url('../src\assets\images\ReadMe Generator.jpg');
+  background-image: url('../src/assets/images/ReadMe Generator.jpg');
 }
 
 .card[for="p4"] {
-  background-image: url('../src\assets\images\task efficient.jpg');
+  background-image: url('../src/assets/images/task efficient.jpg');
 }
 
 .card[for="p5"] {
-  background-image: url('../src\assets\images\booksearch.jpg');
+  background-image: url('../src/assets/images/booksearch.jpg');
 }
 
 .card[for="p6"] {
-  background-image: url('../src\assets\images\social database.jpg');
+  background-image: url('../src/assets/images/social database.jpg');
 }
 
 /* .card {
