@@ -1,9 +1,12 @@
+import '../App.css';
+import profileImage from '../assets/profile.JPEG'; // Import the image
+
 export default function Home() {
   return (
     <div className="home-container">
       <div className="image-container">
         <img 
-          src="src\assets\images\profile.JPEG" 
+          src={profileImage} // Use the imported image
           alt="Your Avatar" 
           className="avatar"
         />
