@@ -1,0 +1,343 @@
+ /* Default CSS */
+@font-face {
+  font-family: Quicksand;
+  src: url(./assets/Quicksand-VariableFont_wght.ttf)
+}
+
+
+*{
+  margin: 5px 15px 5px 15px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body{
+  background-color: rgb(35, 35, 35);
+  font-weight: bold;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-family:'Quicksand', sans-serif;
+} 
+
+.card{
+  width: 500px;
+  height: 350px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 25px ;
+  margin-right: 25px;
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.overlay:hover {
+backdrop-filter: blur(10px);
+opacity:1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  opacity: 0;
+  text-align: center;
+}
+
+.image{
+  display: block;
+  width: 500px;
+  max-height: 350px;
+  border-radius: 25px;
+}
+
+.button {
+  outline: none;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0; /* Add spacing between buttons */
+}
+
+.card-table{
+  margin-left: 37px;
+  margin-right: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.nav-pills .nav-link {
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills>.nav-link {
+  color: #fff;
+  background-color: #929292;
+  border-radius: 25px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 35px;
+  
+  /* margin-left: 50px; */
+}
+
+.end{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.center{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  text-align:center;
+}
+
+.p-text {
+  color: rgb(128, 128, 128);
+}
+
+.footer {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  text-align: right;
+  margin-left: -145px;
+  margin-top: 75px;
+}
+
+.logo{
+  margin-left:25px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  background-color: #929292;
+  border-radius: 25px;
+  max-width: 500px;
+  width: 100%;
+  padding: 25px 25px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally within its container */
+}
+
+.left {
+  margin-top: 50px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  text-align:center;
+}
+
+.textbox {
+  width: 300px;
+  max-height: 150px;
+  border-radius: 25px;
+}
+
+.submit {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.round {
+  border-radius: 25px;
+}
+
+.downbtn {
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #929292;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+  margin-bottom: 75px;
+  width: 125px;
+}
+
+.center-list{
+  margin: 25px 30px 25px 30px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  text-align:center;
+  list-style: none;
+  padding: 0px;
+  font-weight: 400;
+}
+
+
+/* =====ABOUT ME CSS======= */
+.wrapper {
+  margin: 50px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.hobby-card {
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.hobby-card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hobby-card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100px; */
+  width: 670px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+  backdrop-filter: blur(3px);
+  border-radius: 25px;
+}
+
+.description p {
+  color: #ffffff;
+  /* padding-top: 5px; */
+  padding-left: 30px;
+}
+
+.description h4 {
+  text-transform:uppercase;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 700px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.hobby-card[for="c1"] {
+  background-image: url('../src/assets/images/surfing.jpg');
+}
+.hobby-card[for="c2"] {
+  background-image: url('../src/assets/images/yosemite.jpg');
+}
+.hobby-card[for="c3"] {
+  background-image: url('../src/assets/images/motorcycle.jpg');
+}
+.hobby-card[for="c4"] {
+  background-image: url('../src/assets/images/gym.jpg');
+}
+
+/* .blur {
+  backdrop-filter: blur(3px);
+  border-radius: 25px;
+} */
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.text-container {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.text-container h1 {
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+ 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.contact-container h1,
+.contact-container p {
+  margin-bottom: 20px;
+}
+
