@@ -37,6 +37,8 @@ body{
   justify-content: center;
   align-items: center;
   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  background-size:contain;
+  background-position: center;
 }
 
 .overlay:hover {
@@ -289,6 +291,73 @@ input:checked + label .description {
 .hobby-card[for="c4"] {
   background-image: url('../src/assets/images/gym.jpg');
 }
+
+/* Portfolio Project Images */
+.card[for="p1"] {
+  background-image: url('../src\assets\images\employee management.jpg');
+}
+
+.card[for="p2"] {
+  background-image: url('../src\assets\images\vehicle builder.jpg');
+}
+
+.card[for="p3"] {
+  background-image: url('../src\assets\images\ReadMe Generator.jpg');
+}
+
+.card[for="p4"] {
+  background-image: url('../src\assets\images\task efficient.jpg');
+}
+
+.card[for="p5"] {
+  background-image: url('../src\assets\images\booksearch.jpg');
+}
+
+.card[for="p6"] {
+  background-image: url('../src\assets\images\social database.jpg');
+}
+
+/* .card {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  opacity: 0;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card .button {
+  outline: none;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+} */
 
 /* .blur {
   backdrop-filter: blur(3px);
